@@ -1,0 +1,14 @@
+[H[2J
+
+The calculation size(limit of numbers) is:10  
+The number of threads are:4  
+
+Using Serial
+The solution obtained is: 
+Prime numbers within the given range are 
+2   3   5   7   The total time taken: 66.000000 
+
+Using Parallel OpenMP
+The solution obtained is: 
+Prime numbers within the given range are 
+2   3   5   7   The total time taken:  14.000000
