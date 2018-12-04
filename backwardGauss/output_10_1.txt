@@ -1,0 +1,32 @@
+[H[2J
+
+The size of matrix is10  The Number of threads are4  
+
+Using Serial
+The solution obtained is: 
+x1=1.940208
+x2=1.535768
+x3=-0.477530
+x4=-0.300904
+x5=-0.861866
+x6=0.725876
+x7=-0.421906
+x8=-0.526511
+x9=-0.662234
+x10=-0.852840
+The total time taken:0.011000 
+
+Using Parallel OpenMP
+The solution obtained is: 
+x1=1.940208
+x2=1.535768
+x3=-0.477530
+x4=-0.300904
+x5=-0.861866
+x6=0.725876
+x7=-0.421906
+x8=-0.526511
+x9=-0.662234
+x10=-0.852840
+The total time taken:1.157000
+The time is in milliseconds
