@@ -1,0 +1,41 @@
+
+Features		| Git				| Subversion (SVN)
+------------------------+-------------------------------+-----------------------------
+Maintainer		| Junio Hamano			| Apache Software Foundation
+Development status	| actively developed		| actively developed
+Repository model	| Distributed			| Client-server
+Concurrency model	| Merge				| Merge or lock
+License			| GPL				| Apache/BSD style
+Platforms supported	| POSIX,Windows,Mac OS		| Unix-like,Windows,Mac OS
+Cost			| Free				| Free
+Stand-alone GUIs	| gitk, git-gui (Tcl/Tk)	| KDESVN, RabbitVCS, RapidSVN
+Web interfaces		| Gitweb, wit, cgit, GitHub	| WebSVN, ViewSVN, ViewVC
+Notable users		| Linux kernel,Android,KDE	| SourceForge,FreeBSD
+
+
+
+Note that while Git and SVN are free, that in no way means that they have
+not been used on projects of a huge scale, especially Git as it is used in the development of the Linux kernel
+and also the Android operating system which are huge projects with a massive number of people contributing
+to each of them.
+
+These two projects are open source and highly distributed and this plays to the strengths of Git which is based
+on a Distributed data model.
+
+The main difference between Git and SVN is the different Repository models. Git uses a Distributed
+revision control model which takes a peer-to-peer approach to version control, as opposed to the client-server
+approach of SVN. Rather than a single, central repository on which clients synchronize, each
+peer’s working copy of the codebase is in itself a repository. Distributed revision control conducts synchroniza-
+tion by exchanging patches (sets of changes) from peer to peer.
+
+This results in some advantages compared to a centralized server system: It allows each user to work produc-
+tively even when not connected to a network, most operations are much faster since no network is involved and
+it avoids relying on a single physical machine as a single point of failure.
+
+However there are some disadvantages to the distributed model: There may not be an overall reference copy of
+the project, there are also more issues with merging together the overall code as in the case for the distributed
+model the independent repositories may be significantly different from each other where as in the server model
+everyone is working on the same overall copy.
+
+Both have good support across multiple platforms and are also under active development.
+
